@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<!--<script>window.alert("Hello Liam McCabe");</script>-->
+
+
+
+<section id="boxes">
+        
+            <% @items.each do |item| %>
+            
+             <div class="box">  
+                
+                <h1><%= item.make %></h1>
+                
+                <p><%= item.model %></p>
+                
+                
+                <%= link_to (image_tag item.image_url, :class => "IndexItemContImg"), item %>
+                
+                
+                <p id ="description"><%= item.description %></p>
+                
+                <p><%= item.price %></p>
+                
+                <p><%= link_to 'Show', item, :class => "button", :role => "button" %>
+                <%= link_to 'Edit', edit_item_path(item), :class => "button", :role => "button" %>
+                <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "button", :role => "button" %></p>
+                <br>
+          </div>
+       
+    <% end %>
+  </section>
+  
+  <br>
+
+<%= link_to 'New Item', new_item_path, :class => "button", :role => "button" %>

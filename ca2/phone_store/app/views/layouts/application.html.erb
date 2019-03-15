@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PhoneStore</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    
+      <header>
+        <div class="container">
+          <div id="branding">
+            <h1><span class="highlight">SHANE'S</span> MEGA PHONE STORE</h1>
+          </div>
+          <nav>
+            <ul>
+              <li class="current"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Services</a></li>
+            </ul>
+          </nav>
+        </div>
+          <br>
+      </header>
+      
+      <section id="showcase">
+        <div class="container">
+          <div style="background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.66) 0%,rgba(255,255,255,0.00) 103.52%);">
+          <h1>All The Latest Smart Phones Are in Stock!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare aliquam ipsum, quis imperdiet massa egestas a. Pellentesque convallis viverra justo, ac commodo dui vehicula non. Praesent sed sem lectus. Sed vel nisi egestas, tempor turpis in, vulputate lorem.</p>
+         </div>
+        </div>
+      </section>
+      
+      
+        
+        <section id="newsletter">
+          <div class="container">
+            <h1>Subscribe to our Newsletter</h1>
+            
+            <form>
+              <div>
+        				<input name="first_name" type="text" id="fname" placeholder=" First Name" />
+        			</div>
+        			
+        			<div>
+        				<input name="last_name" type="text" id="lastname" placeholder=" Last Name" />
+        			</div>
+        			
+        			<div>
+        				<input name="email" type="text" id="email" placeholder=" Email" />
+        			</div>
+        			
+        			<div>
+        				<input name="password" type="text" id="pass" placeholder=" Password" />
+        			</div>
+        			
+        			<div>
+        			<div class="small">Leave us a Message</div>
+        				<textarea name="message" type="text" id="message" placeholder="Message"></textarea>	
+        			</div>
+        			
+        			<input type="button" value="Submit" onclick = "emailValidator();">
+        			<input type="reset" />
+            </form>
+          </div>
+        </section>
+        
+      
+      
+      
+      <%= yield %>
+      
+      <footer>Shane's Mega Phone Store, Copyright © 2019</footer>
+  </body>
+  <!--js file for newsletter-->
+  <script src="JS.js"></script>
+</html>

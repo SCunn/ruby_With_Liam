@@ -1,0 +1,249 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ 
+
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+/* Header */
+header{
+    background:#35424a;
+    color:#ffffff;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#e8491d 3px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+
+
+header li{
+    float:left;
+    display:inline;
+    padding:0 20px 0 20px;
+}
+
+header #branding {
+    float:left;
+}
+
+header #branding h1{
+    margin:0;
+}
+
+header nav{
+    float:right;
+    margin-top:10px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight:bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight:bold;
+}
+
+/* Showcase */
+
+#showcase{
+    min-height:460px;
+    background:url('themes_section01_mo.jpg') no-repeat;
+    background-size:cover;
+    text-align:center;
+    color:#e8491d;
+    
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+   
+    
+}
+
+#showcase p{
+    font-size:20px;
+   
+}
+/* Newsletter*/
+
+#newsletter{
+    
+    padding:15px;
+    color:#ffffff;
+    background:#35424a;
+}
+
+#newsletter h1{
+    float:left;
+    
+    
+}
+
+#newsletter form{
+    
+    float:right;
+    margin-top:15px;
+}
+
+/*  Boxes  */
+
+#boxes {
+    width: 100%;
+    margin-top:20px;
+    min-height: 300px;
+}
+
+#boxes .box{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    display:inline-block;
+    text-align:center;
+    width:30%;
+    padding:10px;
+    
+}
+
+#boxes #description {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    min-height:120px;
+}
+
+#boxes .box .IndexItemContImg{
+    width: 60%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+    
+}
+    
+
+
+
+.button {
+    background-color: #e8491d;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;
+    background-color:#e8491d;
+    text-align:center;
+}
+
+/* Form layout */
+
+.formCont {
+    margin:auto;
+    width:80%;
+    border-bottom:3px solid #e8491d;
+    background:#35424a;
+    padding: 10px;
+    text-align:center;
+    color:#ffffff;
+}
+
+input[type=text], select {
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 35%;
+    background-color: #e8491d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit_show_new h1{
+    text-align:center;
+}
+
+.edit_show_new p{
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    min-height:120px;
+}
+
+.edit_show_new a.button{
+    margin:20px 15px;
+}
+
+.edit_show_new #show_par {
+    margin:40px 40px;
+}
+
+#ItemContImg {
+    width: 55%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+}
